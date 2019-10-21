@@ -19,6 +19,8 @@ program finite_volume
 	open(unit = output_arq, file = "output_arq.out")
 	open(unit = plot_info, file = "plot_info.out")
 
+	time_steps = 10
+
 	L = 3.1415
 	nodes_x = 100
 	delta_x = L/(nodes_x-1)
@@ -31,11 +33,21 @@ program finite_volume
 
 	do i = 1, nodes_x
 		x_atual = delta_x*(i-1)
-		u_old(i) = u0_cond( x_atual )
-
+		u_old(i) = u0_cond( x_atual )		
+		write(output_arq,'(F12.4 F12.4)') x_atual, u_old(i)
 	enddo
 
 
+
+	do j = 2, time_steps 
+		
+		do i = 1, nodes_x
+			x_atual = delta_x*(i-1)
+			u_new(i) = u_old(i)
+			write(output_arq,'(F12.4 F12.4)') x_atual, u_new(i)
+		enddo
+	
+	enddo
 
 	deallocate( u_old )
 	deallocate( u_new )
