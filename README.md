@@ -43,7 +43,7 @@ You will need Matlab or Octave to run the .m code. Once with Matlab/Octave opene
  
  ![Main Equation](https://latex.codecogs.com/gif.latex?%5Cbegin%7Bcases%7D%20%5Cdisplaystyle%20%5Cphi%28x%29%5Cfrac%7B%5Cpartial%20u%28x%2Ct%29%7D%7B%5Cpartial%20t%7D%20&plus;%20%5Cfrac%7B%5Cpartial%20F%28u%2Cx%29%7D%7B%5Cpartial%20t%7D%20%3D%20f%28u%2Cx%29%20%5C%5C%20u%28x%2C0%29%20%3D%20u_0%28x%29%20%26%20x%20%5Cin%20%5B0%2CL%5D%5C%5C%20u%280%2Ct%29%20%3D%20u_1%28t%29%20%5C%5C%20%5Cend%7Bcases%7D)
  
- The first part is the mathematical model itself, it describes, for example, de physical behavior of the system. The second and third part are, respectively, the conditon of system when time is 0, initial condition, and the value of function over the time in x equal 0, border conditon4.
+ The first part is the mathematical model itself, it describes, for example, de physical behavior of the system. The second and third part are, respectively, the conditon of system when time is 0, initial condition, and the value of function over the time in x equal 0, border conditon.
  
  ## Problems variables/conditions
  
